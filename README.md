@@ -62,8 +62,6 @@ Server side Computation:<br>
     Verify Client Signature
   </li>
 </ul>
-<br>
-![flow](https://user-images.githubusercontent.com/48147323/116243064-2d273d00-a784-11eb-9526-dbd5fe5ec3ba.jpg)
 
 # Result
 ![output](https://user-images.githubusercontent.com/48147323/116242628-bab65d00-a783-11eb-8133-f8bb341ffdc3.png)
