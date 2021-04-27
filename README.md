@@ -28,7 +28,10 @@ The encrypt and decrypt functions are written in such a way that they could hand
   <li>
     Server Inputs: Public and Private key parameters for Server. 
   </li>
-Message Flow: <br>
+  <br>
+</ul>
+<ul>
+<b><u>Message Flow:</u></b> <br>
   <li>
     Client requests for public key of server.
   </li>
@@ -38,7 +41,10 @@ Message Flow: <br>
   <li>
     Client sends Ciphertext, Encrypted secret key, Client Signature, Client public key.
   </li>
-Client side computation:<br>
+</ul>
+<ul>
+<br>
+<b><u> Client side computation: </u></b><br>
   <li>
     Create Client signature through RSA algorithm, taking Digest from Hash algorithm and client private key as input.
   </li>
@@ -48,7 +54,10 @@ Client side computation:<br>
   <li>
     Encrypt Secret key with RSA algorithm, taking Secret key and Server Public key as input.
   </li>
-Server side Computation:<br>
+<br>
+</ul>
+<ul>
+<b><u>Server side Computation:</u></b><br>
   <li>
     Decrypt Secret key using RSA algorithm 
   </li>
