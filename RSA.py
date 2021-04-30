@@ -3,8 +3,6 @@ Author: Shikhar Gupta 2018229
 """
 import random
 import math
-import hashlib
-import json
 
 
 def extended_euclidean(num1, num2):
@@ -121,39 +119,3 @@ def decrypt(keys, text):
     else:
         result = pow(text, key, n)
         return int(result)
-
-
-
-# For ideal tesing and debugging the code.
-# if __name__ == "__main__":
-#     key_pair = generate(29, 47)
-#     msg = 70
-#     print("Public key is: ", key_pair["public"])
-#     print("Private key is: ", key_pair["private"])
-#     public_key = json.dumps(key_pair["public"])
-#     private_key = json.dumps(key_pair["private"])
-
-#     pbk = json.loads(private_key)
-#     pvk = json.loads(public_key)
-#     cryp = encrypt(pvk, msg)
-#     out = decrypt(pbk, cryp)
-#     print("encrypted text ", cryp)
-#     print("out ", out)
-#     print("**********************************************")
-#     digest = hashlib.sha256(msg.to_bytes(2, "big")).hexdigest()
-#     print(digest)
-
-#     print("**********************************************")
-#     digital_sign = encrypt(key_pair["private"], digest)
-#     print(digital_sign)
-
-#     print("**********************************************")
-#     digi = decrypt(key_pair["public"], digital_sign)
-#     if digi == digest:
-#         print("success")
-#     else:
-#         print("unsuccessful")
-#         print(digi)
-#     print(cryp)
-#     decryp = decrypt(key_pair["private"], cryp)
-#     print(decryp)

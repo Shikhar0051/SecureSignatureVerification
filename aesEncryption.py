@@ -102,13 +102,3 @@ class AES_Encryption:
         ciphertext = format(state,'016b')
         return int(ciphertext, 2)
 
-"""
-### Debugging part Please Ignore Unless you wanna try individually ;)
-"""
-# if __name__ == "__main__":
-#     plaintext = 99
-#     key = 20
-#     cipher = AES_Encryption(key)
-#     cipher_text = cipher.AES_Encrypt(plaintext, sBox)
-#     print(cipher_text)
-

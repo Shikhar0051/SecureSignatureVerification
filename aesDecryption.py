@@ -100,13 +100,3 @@ class AES_Decryption:
         
         plaintext = format(plain_text,'08b')
         return int(plaintext, 2)
-
-"""
-### Debugging part Please Ignore Unless you wanna try individually ;)
-if __name__ == "__main__":
-    plaintext = 42122
-    key = 222
-    cipher = AES_Decryption(key)
-    plaintext = cipher.AES_Decrypt(plaintext, sBox)
-    print(plaintext)
-"""
