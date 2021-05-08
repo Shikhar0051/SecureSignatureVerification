@@ -14,7 +14,7 @@ class AES_Decryption:
 
     def keyExpansion(self, key):
         w = [None] * 6
-        """Generate the three round keys"""
+        """Generate the three round keys """
         def sub2Nib(b):
             """Swap each nibble and substitute it using sBox"""
             return s_Box[b >> 4] + (s_Box[b & 0x0f] << 4)
