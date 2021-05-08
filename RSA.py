@@ -14,6 +14,7 @@ def extended_euclidean(num1, num2):
     @param:
         num1 = Stores variable a from multiplicative_inverse()
         num2 = Stores variable n from multiplicative_inverse()
+        
     @variables:
         d, temp_x, tempy = Stores returned value from self call
     """
